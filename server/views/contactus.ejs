@@ -1,0 +1,36 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+<br><br>
+<main class="container">
+<div class="jumbotron">
+
+<h1>Contact Us</h1>
+<br>
+    <form action="mailto:venzonariola@yahoo.com" method="post">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Full name">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Email Address</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email address">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Inquiry</label>
+            <textarea type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input your inquiry here"></textarea>
+        </div>
+        <br>
+
+        <input class="btn btn-primary" name="btnSubmit" type="submit" value="Submit Inquiry" tabindex="17">
+        <input class="btn btn-secondary" type="reset" name="btnrReset" value="Reset Form" tabindex="19">
+        <br>
+    </form>            
+
+</div>
+</main>
+
+
+<%- include partials/bottom_nav.ejs %>     
+  
+<%- include partials/footer.ejs %>
