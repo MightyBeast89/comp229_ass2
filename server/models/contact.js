@@ -2,7 +2,7 @@ let express = require("express");
 let router = express.Router();
 let mongoose = require("mongoose");
 
-//create a model class
+//create a model class/schema
 let contactModel = mongoose.Schema(
   {
     contact_name: String,
@@ -16,5 +16,5 @@ let contactModel = mongoose.Schema(
   }
 );
 
-//booksmodel to create new book more powerful than just class
+//contactmodel to create new contact
 module.exports = mongoose.model("Contact", contactModel);

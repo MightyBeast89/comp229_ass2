@@ -12,7 +12,7 @@ module.exports.displayContactList = (req, res, next) => {
     } else {
       
       res.render("contact/list", { title: "Contacts", ContactList: contactList });
-      //render book.ejs and pass title and Booklist variable we are passing bookList object to BookList property
+      //render list.ejs and pass title and Contactlist variable we are passing contactList object to ContactList property
     }
   });
 };
@@ -36,7 +36,7 @@ module.exports.addprocesspage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      // refresh the book list
+      // refresh the contact list
       res.redirect("/contact-list");
     }
   });
@@ -70,7 +70,7 @@ module.exports.processingeditpage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      //refresh the book list
+      //refresh the contact list
       res.redirect("/contact-list");
     }
   });
@@ -83,7 +83,7 @@ module.exports.deletepage = (req, res, next) => {
       console.log(err);
       res.end(err);
     } else {
-      //refresh book list
+      //refresh contact list
       res.redirect("/contact-list");
     }
   });
